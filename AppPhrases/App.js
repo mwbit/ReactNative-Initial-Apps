@@ -10,25 +10,6 @@ import {
 } from 'react-native';
 import image from './assets/img/imgs/logo.png'
 
-const styles = {
-  principal:{
-    flex:1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  botao:{
-    backgroundColor:'#538530',
-    paddingVertical: 10,
-    paddingHorizontal:40,
-    marginTop: 20
-  },
-  textoBotao:{
-    color: 'white',
-    fontSize:16,
-    fontWeight: 'bold'
-  }
-}
- 
 const gerarNovaFrase = ()=>{
   let randomNumber = Math.random()
   randomNumber = Math.floor(randomNumber * 5)
@@ -62,4 +43,25 @@ export default class App extends Component {
     );
   }
 }
+
+const styles = {
+  principal:{
+    flex:1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  botao:{
+    backgroundColor:'#538530',
+    paddingVertical: 10,
+    paddingHorizontal:40,
+    marginTop: 20
+  },
+  textoBotao:{
+    color: 'white',
+    fontSize:16,
+    fontWeight: 'bold'
+  }
+}
+ 
+
 
