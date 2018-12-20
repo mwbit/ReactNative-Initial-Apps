@@ -8,8 +8,9 @@ import {
   Image,
   Alert
 } from 'react-native';
+import image from './assets/img/imgs/logo.png'
 
-const Estilos = {
+const styles = {
   principal:{
     flex:1,
     justifyContent: 'center',
@@ -45,10 +46,10 @@ const gerarNovaFrase = ()=>{
 export default class App extends Component {
   
   render() {
-    const {principal,botao,textoBotao} = Estilos;
+    const {principal,botao,textoBotao} = styles;
     return (
       <View style={principal}>
-        <Image source = {require('./assets/img/imgs/logo.png')}/>
+        <Image source = {image}/>
 
         <TouchableOpacity 
           style={botao}
